@@ -9,7 +9,7 @@ from datetime import date
 
 
 st.set_page_config(page_title="NewsBuddy - Smart Personalized News Delivery System", layout="wide", page_icon="📰")
-API_KEY = "d8286c819d22413f950d35ad1dcc3923"
+API_KEY = "Your_own_API_key" ##to create API key Link given in README.md file
 
 if "bookmarks" not in st.session_state:
     st.session_state["bookmarks"] = []
@@ -202,3 +202,4 @@ elif section == "Login":
     password = st.text_input("Password", type="password")
     if st.button("Login"):
         st.success(f"✅ Logged in as {email}")
+
