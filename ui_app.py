@@ -2,7 +2,7 @@ import streamlit as st
 #from summarizer import summarize_text
 #from sentiment_filter import is_positive
 from news_fetcher import fetch_news
-from translator import translate_text
+#from translator import translate_text
 from tts_converter import text_to_speech
 import uuid, os, re
 from datetime import date
@@ -204,6 +204,7 @@ elif section == "Login":
     password = st.text_input("Password", type="password")
     if st.button("Login"):
         st.success(f"✅ Logged in as {email}")
+
 
 
 
